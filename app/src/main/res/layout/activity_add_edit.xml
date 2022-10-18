@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".presentation.addEdit.AddEditActivity">
+
+    <TextView
+        android:id="@+id/lbl_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edt_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_first_name"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lbl_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edt_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_last_name"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lbl_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edt_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_phone_number"
+        android:inputType="phone"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lbl_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/favorite"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/ckb_favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/favorite"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="lbl_firstname, edt_firstname, lbl_lastname, edt_lastname, lbl_phone_number, edt_phone_number, lbl_favorites, ckb_favorites"
+        app:flow_horizontalAlign="start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
